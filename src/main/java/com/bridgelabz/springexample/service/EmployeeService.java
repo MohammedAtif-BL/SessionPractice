@@ -1,11 +1,12 @@
 package com.bridgelabz.springexample.service;
 
+import com.bridgelabz.springexample.dto.RequestDTO;
 import com.bridgelabz.springexample.entity.Employee;
 
 import java.util.List;
 
 public interface EmployeeService {
-    Employee addEmployee(Employee employee);
+    RequestDTO addEmployee(RequestDTO requestDTO);
 
     List<Employee> getAllEmployee();
 
