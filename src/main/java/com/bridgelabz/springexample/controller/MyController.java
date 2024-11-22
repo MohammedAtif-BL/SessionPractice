@@ -3,6 +3,7 @@ package com.bridgelabz.springexample.controller;
 import com.bridgelabz.springexample.dto.RequestDTO;
 import com.bridgelabz.springexample.entity.Employee;
 import com.bridgelabz.springexample.service.EmployeeServiceImpl;
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -37,7 +38,7 @@ public class MyController {
 
 //    @RequestBody
     @RequestMapping(value = "/add", method = RequestMethod.POST)
-    public RequestDTO addEmployee(@RequestBody RequestDTO requestDTO){
+    public RequestDTO addEmployee(@Valid @RequestBody RequestDTO requestDTO){
         return employeeService.addEmployee(requestDTO);
     }
 
