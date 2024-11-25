@@ -1,268 +1,603 @@
-2024-11-22T15:07:33.499+05:30  INFO 18944 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 18944 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
-2024-11-22T15:07:33.515+05:30 DEBUG 18944 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-11-22T15:07:33.515+05:30  INFO 18944 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
-2024-11-22T15:07:34.457+05:30  INFO 18944 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-22T15:07:34.547+05:30  INFO 18944 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interface.
-2024-11-22T15:07:35.356+05:30  INFO 18944 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-11-22T15:07:35.383+05:30  INFO 18944 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-22T15:07:35.383+05:30  INFO 18944 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-22T15:07:35.474+05:30  INFO 18944 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-22T15:07:35.474+05:30  INFO 18944 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1859 ms
-2024-11-22T15:07:35.545+05:30  INFO 18944 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-22T15:07:35.844+05:30  INFO 18944 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-11-22T15:07:35.848+05:30  INFO 18944 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-22T15:07:35.864+05:30  INFO 18944 --- [springexample] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2024-11-22T15:07:36.328+05:30  INFO 18944 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-22T15:07:36.403+05:30  INFO 18944 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-22T15:07:36.444+05:30  INFO 18944 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-22T15:07:36.913+05:30  INFO 18944 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-22T15:07:37.974+05:30  INFO 18944 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-22T15:07:38.033+05:30  INFO 18944 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22T15:07:38.430+05:30  WARN 18944 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-22T15:07:39.013+05:30  INFO 18944 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-11-22T15:07:39.025+05:30  INFO 18944 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 6.131 seconds (process running for 10.185)
-2024-11-22T15:07:39.028+05:30  INFO 18944 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
-2024-11-22T15:07:39.028+05:30 ERROR 18944 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
-2024-11-22T15:07:39.028+05:30 DEBUG 18944 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
-2024-11-22T15:07:39.028+05:30  WARN 18944 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
-2024-11-22T15:07:51.173+05:30  INFO 18944 --- [springexample] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-22T15:07:51.173+05:30  INFO 18944 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-11-22T15:07:51.173+05:30  INFO 18944 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-11-22T15:18:37.547+05:30  INFO 18944 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22T15:18:37.556+05:30  INFO 18944 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-11-22T15:18:37.559+05:30  INFO 18944 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-11-22T15:18:49.787+05:30  INFO 22356 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 22356 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
-2024-11-22T15:18:49.789+05:30 DEBUG 22356 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-11-22T15:18:49.791+05:30  INFO 22356 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
-2024-11-22T15:18:50.869+05:30  INFO 22356 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-22T15:18:50.944+05:30  INFO 22356 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interface.
-2024-11-22T15:18:51.668+05:30  INFO 22356 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-11-22T15:18:51.686+05:30  INFO 22356 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-22T15:18:51.686+05:30  INFO 22356 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-22T15:18:51.767+05:30  INFO 22356 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-22T15:18:51.769+05:30  INFO 22356 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1893 ms
-2024-11-22T15:18:51.823+05:30  INFO 22356 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-22T15:18:52.089+05:30  INFO 22356 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-11-22T15:18:52.091+05:30  INFO 22356 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-22T15:18:52.135+05:30  INFO 22356 --- [springexample] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2024-11-22T15:18:52.334+05:30  INFO 22356 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-22T15:18:52.430+05:30  INFO 22356 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-22T15:18:52.490+05:30  INFO 22356 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-22T15:18:52.980+05:30  INFO 22356 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-22T15:18:54.098+05:30  INFO 22356 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-22T15:18:54.138+05:30  INFO 22356 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22T15:18:54.557+05:30  WARN 22356 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-22T15:18:55.061+05:30  INFO 22356 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-11-22T15:18:55.073+05:30  INFO 22356 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 5.909 seconds (process running for 6.475)
-2024-11-22T15:18:55.076+05:30  INFO 22356 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
-2024-11-22T15:18:55.077+05:30 ERROR 22356 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
-2024-11-22T15:18:55.077+05:30 DEBUG 22356 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
-2024-11-22T15:18:55.077+05:30  WARN 22356 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
-2024-11-22T15:19:30.518+05:30  INFO 22356 --- [springexample] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-22T15:19:30.518+05:30  INFO 22356 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-11-22T15:19:30.519+05:30  INFO 22356 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-11-22T15:20:54.899+05:30  INFO 22356 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22T15:20:54.902+05:30  INFO 22356 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-11-22T15:20:54.905+05:30  INFO 22356 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-11-22T15:20:59.905+05:30  INFO 700 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 700 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
-2024-11-22T15:20:59.907+05:30 DEBUG 700 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-11-22T15:20:59.908+05:30  INFO 700 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
-2024-11-22T15:21:00.954+05:30  INFO 700 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-22T15:21:01.035+05:30  INFO 700 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interface.
-2024-11-22T15:21:01.793+05:30  INFO 700 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-11-22T15:21:01.814+05:30  INFO 700 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-22T15:21:01.814+05:30  INFO 700 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-22T15:21:01.882+05:30  INFO 700 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-22T15:21:01.882+05:30  INFO 700 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1884 ms
-2024-11-22T15:21:01.933+05:30  INFO 700 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-22T15:21:02.231+05:30  INFO 700 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-11-22T15:21:02.234+05:30  INFO 700 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-22T15:21:02.255+05:30  INFO 700 --- [springexample] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2024-11-22T15:21:02.460+05:30  INFO 700 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-22T15:21:02.548+05:30  INFO 700 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-22T15:21:02.596+05:30  INFO 700 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-22T15:21:03.045+05:30  INFO 700 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-22T15:21:04.103+05:30  INFO 700 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-22T15:21:04.138+05:30  INFO 700 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22T15:21:04.547+05:30  WARN 700 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-22T15:21:05.070+05:30  INFO 700 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-11-22T15:21:05.083+05:30  INFO 700 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 5.81 seconds (process running for 6.366)
-2024-11-22T15:21:05.087+05:30  INFO 700 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
-2024-11-22T15:21:05.087+05:30 ERROR 700 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
-2024-11-22T15:21:05.087+05:30 DEBUG 700 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
-2024-11-22T15:21:05.087+05:30  WARN 700 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
-2024-11-22T15:21:10.035+05:30  INFO 700 --- [springexample] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-22T15:21:10.035+05:30  INFO 700 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-11-22T15:21:10.036+05:30  INFO 700 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-11-22T15:21:10.265+05:30  WARN 700 --- [springexample] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.bridgelabz.springexample.dto.RequestDTO com.bridgelabz.springexample.controller.MyController.addEmployee(com.bridgelabz.springexample.dto.RequestDTO) with 3 errors: [Field error in object 'requestDTO' on field 'fName': rejected value []; codes [NotEmpty.requestDTO.fName,NotEmpty.fName,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [requestDTO.fName,fName]; arguments []; default message [fName]]; default message [must not be empty]] [Field error in object 'requestDTO' on field 'address': rejected value [ ]; codes [NotBlank.requestDTO.address,NotBlank.address,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [requestDTO.address,address]; arguments []; default message [address]]; default message [must not be blank]] [Field error in object 'requestDTO' on field 'lName': rejected value [null]; codes [NotNull.requestDTO.lName,NotNull.lName,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [requestDTO.lName,lName]; arguments []; default message [lName]]; default message [must not be null]] ]
-2024-11-22T15:21:52.639+05:30  INFO 700 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22T15:21:52.643+05:30  INFO 700 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-11-22T15:21:52.649+05:30  INFO 700 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-11-22T15:21:55.354+05:30  INFO 23124 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 23124 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
-2024-11-22T15:21:55.356+05:30 DEBUG 23124 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-11-22T15:21:55.357+05:30  INFO 23124 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
-2024-11-22T15:21:56.387+05:30  INFO 23124 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-22T15:21:56.463+05:30  INFO 23124 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interface.
-2024-11-22T15:21:57.251+05:30  INFO 23124 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-11-22T15:21:57.276+05:30  INFO 23124 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-22T15:21:57.276+05:30  INFO 23124 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-22T15:21:57.344+05:30  INFO 23124 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-22T15:21:57.344+05:30  INFO 23124 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1904 ms
-2024-11-22T15:21:57.392+05:30  INFO 23124 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-22T15:21:57.675+05:30  INFO 23124 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-11-22T15:21:57.678+05:30  INFO 23124 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-22T15:21:57.698+05:30  INFO 23124 --- [springexample] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2024-11-22T15:21:57.914+05:30  INFO 23124 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-22T15:21:57.997+05:30  INFO 23124 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-22T15:21:58.053+05:30  INFO 23124 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-22T15:21:58.489+05:30  INFO 23124 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-22T15:21:59.584+05:30  INFO 23124 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-22T15:21:59.635+05:30  INFO 23124 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22T15:22:00.061+05:30  WARN 23124 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-22T15:22:00.577+05:30  INFO 23124 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-11-22T15:22:00.590+05:30  INFO 23124 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 5.855 seconds (process running for 6.384)
-2024-11-22T15:22:00.595+05:30  INFO 23124 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
-2024-11-22T15:22:00.595+05:30 ERROR 23124 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
-2024-11-22T15:22:00.595+05:30 DEBUG 23124 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
-2024-11-22T15:22:00.595+05:30  WARN 23124 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
-2024-11-22T15:22:04.597+05:30  INFO 23124 --- [springexample] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-22T15:22:04.598+05:30  INFO 23124 --- [springexample] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-11-22T15:22:04.603+05:30  INFO 23124 --- [springexample] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2024-11-22T15:22:04.820+05:30  WARN 23124 --- [springexample] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.bridgelabz.springexample.dto.RequestDTO com.bridgelabz.springexample.controller.MyController.addEmployee(com.bridgelabz.springexample.dto.RequestDTO) with 3 errors: [Field error in object 'requestDTO' on field 'fName': rejected value []; codes [NotEmpty.requestDTO.fName,NotEmpty.fName,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [requestDTO.fName,fName]; arguments []; default message [fName]]; default message [must not be empty]] [Field error in object 'requestDTO' on field 'lName': rejected value [null]; codes [NotNull.requestDTO.lName,NotNull.lName,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [requestDTO.lName,lName]; arguments []; default message [lName]]; default message [must not be null]] [Field error in object 'requestDTO' on field 'address': rejected value [ ]; codes [NotBlank.requestDTO.address,NotBlank.address,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [requestDTO.address,address]; arguments []; default message [address]]; default message [must not be blank]] ]
-2024-11-22T15:26:50.509+05:30  INFO 23124 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22T15:26:50.515+05:30  INFO 23124 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-11-22T15:26:50.517+05:30  INFO 23124 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-11-22T15:26:56.395+05:30  INFO 21884 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 21884 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
-2024-11-22T15:26:56.398+05:30 DEBUG 21884 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-11-22T15:26:56.399+05:30  INFO 21884 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
-2024-11-22T15:26:57.616+05:30  INFO 21884 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-22T15:26:57.718+05:30  INFO 21884 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interface.
-2024-11-22T15:26:58.655+05:30  INFO 21884 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-11-22T15:26:58.685+05:30  INFO 21884 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-22T15:26:58.685+05:30  INFO 21884 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-22T15:26:58.779+05:30  INFO 21884 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-22T15:26:58.780+05:30  INFO 21884 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2297 ms
-2024-11-22T15:26:58.840+05:30  INFO 21884 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-22T15:26:59.163+05:30  INFO 21884 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-11-22T15:26:59.167+05:30  INFO 21884 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-22T15:26:59.190+05:30  INFO 21884 --- [springexample] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2024-11-22T15:26:59.469+05:30  INFO 21884 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-22T15:26:59.582+05:30  INFO 21884 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-22T15:26:59.652+05:30  INFO 21884 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-22T15:27:00.146+05:30  INFO 21884 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-22T15:27:01.233+05:30  INFO 21884 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-22T15:27:01.274+05:30  INFO 21884 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22T15:27:01.658+05:30  WARN 21884 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-22T15:27:02.201+05:30  INFO 21884 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-11-22T15:27:02.213+05:30  INFO 21884 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 6.522 seconds (process running for 7.101)
-2024-11-22T15:27:02.217+05:30  INFO 21884 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
-2024-11-22T15:27:02.217+05:30 ERROR 21884 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
-2024-11-22T15:27:02.218+05:30 DEBUG 21884 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
-2024-11-22T15:27:02.218+05:30  WARN 21884 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
-2024-11-22T15:27:10.465+05:30  INFO 21884 --- [springexample] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-22T15:27:10.472+05:30  INFO 21884 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-11-22T15:27:10.474+05:30  INFO 21884 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-11-22T15:27:10.955+05:30  WARN 21884 --- [springexample] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.bridgelabz.springexample.dto.RequestDTO com.bridgelabz.springexample.controller.MyController.addEmployee(com.bridgelabz.springexample.dto.RequestDTO): [Field error in object 'requestDTO' on field 'fName': rejected value [abc]; codes [Pattern.requestDTO.fName,Pattern.fName,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [requestDTO.fName,fName]; arguments []; default message [fName],[Ljakarta.validation.constraints.Pattern$Flag;@180bfffb,^[A-Z][a-zA-Z]{2,}$]; default message [Pattern mismatch Min 3 characters eg= Sam]] ]
-2024-11-22T15:29:01.978+05:30  INFO 21884 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22T15:29:01.983+05:30  INFO 21884 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-11-22T15:29:01.985+05:30  INFO 21884 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-11-22T15:29:11.776+05:30  INFO 10572 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 10572 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
-2024-11-22T15:29:11.779+05:30 DEBUG 10572 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-11-22T15:29:11.780+05:30  INFO 10572 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
-2024-11-22T15:29:13.095+05:30  INFO 10572 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-22T15:29:13.177+05:30  INFO 10572 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interface.
-2024-11-22T15:29:14.633+05:30  INFO 10572 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-11-22T15:29:14.659+05:30  INFO 10572 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-22T15:29:14.659+05:30  INFO 10572 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-22T15:29:14.736+05:30  INFO 10572 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-22T15:29:14.736+05:30  INFO 10572 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2793 ms
-2024-11-22T15:29:14.781+05:30  INFO 10572 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-22T15:29:15.082+05:30  INFO 10572 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-11-22T15:29:15.086+05:30  INFO 10572 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-22T15:29:15.105+05:30  INFO 10572 --- [springexample] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2024-11-22T15:29:15.301+05:30  INFO 10572 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-22T15:29:15.395+05:30  INFO 10572 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-22T15:29:15.440+05:30  INFO 10572 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-22T15:29:15.937+05:30  INFO 10572 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-22T15:29:16.800+05:30  INFO 10572 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-22T15:29:16.839+05:30  INFO 10572 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22T15:29:17.365+05:30  WARN 10572 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-22T15:29:18.081+05:30  INFO 10572 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-11-22T15:29:18.113+05:30  INFO 10572 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 6.913 seconds (process running for 8.007)
-2024-11-22T15:29:18.120+05:30  INFO 10572 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
-2024-11-22T15:29:18.121+05:30 ERROR 10572 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
-2024-11-22T15:29:18.121+05:30 DEBUG 10572 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
-2024-11-22T15:29:18.121+05:30  WARN 10572 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
-2024-11-22T15:29:38.456+05:30  INFO 10572 --- [springexample] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-22T15:29:38.456+05:30  INFO 10572 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-11-22T15:29:38.457+05:30  INFO 10572 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-11-22T15:29:38.640+05:30  WARN 10572 --- [springexample] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.bridgelabz.springexample.dto.RequestDTO com.bridgelabz.springexample.controller.MyController.addEmployee(com.bridgelabz.springexample.dto.RequestDTO): [Field error in object 'requestDTO' on field 'emailId': rejected value [asdfdfs]; codes [Email.requestDTO.emailId,Email.emailId,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [requestDTO.emailId,emailId]; arguments []; default message [emailId],[Ljakarta.validation.constraints.Pattern$Flag;@37480e13,.*]; default message [must be a well-formed email address]] ]
-2024-11-22T15:32:52.982+05:30  INFO 10572 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22T15:32:52.989+05:30  INFO 10572 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-11-22T15:32:52.991+05:30  INFO 10572 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-11-22T15:32:58.867+05:30  INFO 20228 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 20228 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
-2024-11-22T15:32:58.869+05:30 DEBUG 20228 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-11-22T15:32:58.870+05:30  INFO 20228 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
-2024-11-22T15:32:59.927+05:30  INFO 20228 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-22T15:32:59.991+05:30  INFO 20228 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
-2024-11-22T15:33:00.725+05:30  INFO 20228 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-11-22T15:33:00.750+05:30  INFO 20228 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-22T15:33:00.751+05:30  INFO 20228 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-22T15:33:00.837+05:30  INFO 20228 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-22T15:33:00.838+05:30  INFO 20228 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1881 ms
-2024-11-22T15:33:00.885+05:30  INFO 20228 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-22T15:33:01.108+05:30  INFO 20228 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-11-22T15:33:01.110+05:30  INFO 20228 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-22T15:33:01.131+05:30  INFO 20228 --- [springexample] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2024-11-22T15:33:01.355+05:30  INFO 20228 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-22T15:33:01.434+05:30  INFO 20228 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-22T15:33:01.474+05:30  INFO 20228 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-22T15:33:01.988+05:30  INFO 20228 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-22T15:33:03.118+05:30  INFO 20228 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-22T15:33:03.163+05:30  INFO 20228 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22T15:33:04.184+05:30  WARN 20228 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-22T15:33:04.681+05:30  INFO 20228 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-11-22T15:33:04.691+05:30  INFO 20228 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 6.421 seconds (process running for 6.992)
-2024-11-22T15:33:04.695+05:30  INFO 20228 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
-2024-11-22T15:33:04.696+05:30 ERROR 20228 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
-2024-11-22T15:33:04.696+05:30 DEBUG 20228 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
-2024-11-22T15:33:04.696+05:30  WARN 20228 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
-2024-11-22T15:33:14.621+05:30  INFO 20228 --- [springexample] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-22T15:33:14.621+05:30  INFO 20228 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-11-22T15:33:14.623+05:30  INFO 20228 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-11-22T15:33:14.869+05:30  WARN 20228 --- [springexample] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.bridgelabz.springexample.dto.RequestDTO com.bridgelabz.springexample.controller.MyController.addEmployee(com.bridgelabz.springexample.dto.RequestDTO): [Field error in object 'requestDTO' on field 'age': rejected value [0]; codes [Min.requestDTO.age,Min.age,Min.int,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [requestDTO.age,age]; arguments []; default message [age],18]; default message [Age must be 18+]] ]
-2024-11-22T15:33:48.026+05:30  WARN 20228 --- [springexample] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.bridgelabz.springexample.dto.RequestDTO com.bridgelabz.springexample.controller.MyController.addEmployee(com.bridgelabz.springexample.dto.RequestDTO): [Field error in object 'requestDTO' on field 'age': rejected value [55]; codes [Max.requestDTO.age,Max.age,Max.int,Max]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [requestDTO.age,age]; arguments []; default message [age],50]; default message [Age limit less then 50]] ]
-2024-11-22T15:38:59.579+05:30  INFO 20228 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22T15:38:59.588+05:30  INFO 20228 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-11-22T15:38:59.591+05:30  INFO 20228 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-11-22T15:39:06.353+05:30  INFO 11872 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 11872 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
-2024-11-22T15:39:06.355+05:30 DEBUG 11872 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-11-22T15:39:06.357+05:30  INFO 11872 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
-2024-11-22T15:39:07.426+05:30  INFO 11872 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-22T15:39:07.494+05:30  INFO 11872 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
-2024-11-22T15:39:08.324+05:30  INFO 11872 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-11-22T15:39:08.352+05:30  INFO 11872 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-22T15:39:08.352+05:30  INFO 11872 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-22T15:39:08.427+05:30  INFO 11872 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-22T15:39:08.427+05:30  INFO 11872 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1991 ms
-2024-11-22T15:39:08.476+05:30  INFO 11872 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-22T15:39:08.815+05:30  INFO 11872 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-11-22T15:39:08.817+05:30  INFO 11872 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-22T15:39:08.838+05:30  INFO 11872 --- [springexample] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2024-11-22T15:39:09.090+05:30  INFO 11872 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-22T15:39:09.155+05:30  INFO 11872 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-22T15:39:09.200+05:30  INFO 11872 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-22T15:39:10.206+05:30  INFO 11872 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-22T15:39:11.154+05:30  INFO 11872 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-22T15:39:11.189+05:30  INFO 11872 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-22T15:39:11.597+05:30  WARN 11872 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-22T15:39:12.121+05:30  INFO 11872 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-11-22T15:39:12.135+05:30  INFO 11872 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 6.393 seconds (process running for 6.927)
-2024-11-22T15:39:12.138+05:30  INFO 11872 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
-2024-11-22T15:39:12.139+05:30 ERROR 11872 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
-2024-11-22T15:39:12.139+05:30 DEBUG 11872 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
-2024-11-22T15:39:12.139+05:30  WARN 11872 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
-2024-11-22T15:41:49.408+05:30  INFO 11872 --- [springexample] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-22T15:41:49.409+05:30  INFO 11872 --- [springexample] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-11-22T15:41:49.411+05:30  INFO 11872 --- [springexample] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-11-22T15:41:49.664+05:30  WARN 11872 --- [springexample] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.bridgelabz.springexample.dto.RequestDTO com.bridgelabz.springexample.controller.MyController.addEmployee(com.bridgelabz.springexample.dto.RequestDTO) with 4 errors: [Field error in object 'requestDTO' on field 'eventDate': rejected value [2024-01-01]; codes [Future.requestDTO.eventDate,Future.eventDate,Future.java.time.LocalDate,Future]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [requestDTO.eventDate,eventDate]; arguments []; default message [eventDate]]; default message [Event date must be a future date]] [Field error in object 'requestDTO' on field 'bookingDate': rejected value [2023-01-01]; codes [FutureOrPresent.requestDTO.bookingDate,FutureOrPresent.bookingDate,FutureOrPresent.java.time.LocalDate,FutureOrPresent]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [requestDTO.bookingDate,bookingDate]; arguments []; default message [bookingDate]]; default message [must be a date in the present or in the future]] [Field error in object 'requestDTO' on field 'registrationDate': rejected value [2024-12-12]; codes [PastOrPresent.requestDTO.registrationDate,PastOrPresent.registrationDate,PastOrPresent.java.time.LocalDate,PastOrPresent]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [requestDTO.registrationDate,registrationDate]; arguments []; default message [registrationDate]]; default message [Registration date must be past or present date]] [Field error in object 'requestDTO' on field 'birthDate': rejected value [2025-01-01]; codes [Past.requestDTO.birthDate,Past.birthDate,Past.java.time.LocalDate,Past]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [requestDTO.birthDate,birthDate]; arguments []; default message [birthDate]]; default message [BirthDate must be a past date]] ]
+2024-11-25T15:46:25.111+05:30  INFO 12124 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 12124 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
+2024-11-25T15:46:25.138+05:30 DEBUG 12124 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25T15:46:25.140+05:30  INFO 12124 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-11-25T15:46:26.856+05:30  INFO 12124 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25T15:46:26.986+05:30  INFO 12124 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 112 ms. Found 1 JPA repository interface.
+2024-11-25T15:46:28.185+05:30  INFO 12124 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-25T15:46:28.215+05:30  INFO 12124 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-25T15:46:28.216+05:30  INFO 12124 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-25T15:46:28.355+05:30  INFO 12124 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-25T15:46:28.357+05:30  INFO 12124 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3080 ms
+2024-11-25T15:46:28.422+05:30  INFO 12124 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-25T15:46:28.912+05:30  INFO 12124 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-25T15:46:28.916+05:30  INFO 12124 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-25T15:46:28.953+05:30  INFO 12124 --- [springexample] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-25T15:46:29.291+05:30  INFO 12124 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25T15:46:29.439+05:30  INFO 12124 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-25T15:46:29.535+05:30  INFO 12124 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-25T15:46:30.228+05:30  INFO 12124 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25T15:46:31.810+05:30  INFO 12124 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25T15:46:31.875+05:30  INFO 12124 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T15:46:32.565+05:30  WARN 12124 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25T15:46:33.422+05:30  INFO 12124 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-25T15:46:33.439+05:30  INFO 12124 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 9.243 seconds (process running for 11.099)
+2024-11-25T15:46:33.451+05:30  INFO 12124 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
+2024-11-25T15:46:33.451+05:30 ERROR 12124 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
+2024-11-25T15:46:33.452+05:30 DEBUG 12124 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
+2024-11-25T15:46:33.455+05:30  WARN 12124 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
+2024-11-25T15:47:02.784+05:30  INFO 12124 --- [springexample] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25T15:47:02.784+05:30  INFO 12124 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-25T15:47:02.787+05:30  INFO 12124 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-11-25T15:49:10.175+05:30  WARN 12124 --- [springexample] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'long'; For input string: "favicon.ico"]
+2024-11-25T15:49:14.132+05:30  WARN 12124 --- [springexample] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'long'; For input string: "favicon.ico"]
+2024-11-25T15:50:36.839+05:30  INFO 12124 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T15:50:36.847+05:30  INFO 12124 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-25T15:50:36.849+05:30  INFO 12124 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-25T15:50:41.192+05:30  INFO 10832 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 10832 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
+2024-11-25T15:50:41.196+05:30 DEBUG 10832 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25T15:50:41.197+05:30  INFO 10832 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-11-25T15:50:42.636+05:30  INFO 10832 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25T15:50:42.773+05:30  INFO 10832 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 1 JPA repository interface.
+2024-11-25T15:50:44.055+05:30  INFO 10832 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-25T15:50:44.084+05:30  INFO 10832 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-25T15:50:44.085+05:30  INFO 10832 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-25T15:50:44.188+05:30  INFO 10832 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-25T15:50:44.189+05:30  INFO 10832 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2878 ms
+2024-11-25T15:50:44.268+05:30  INFO 10832 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-25T15:50:44.701+05:30  INFO 10832 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-25T15:50:44.709+05:30  INFO 10832 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-25T15:50:44.740+05:30  INFO 10832 --- [springexample] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-25T15:50:45.071+05:30  INFO 10832 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25T15:50:45.185+05:30  INFO 10832 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-25T15:50:45.305+05:30  INFO 10832 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-25T15:50:46.087+05:30  INFO 10832 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25T15:50:48.286+05:30  INFO 10832 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25T15:50:48.351+05:30  INFO 10832 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T15:50:49.009+05:30  WARN 10832 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25T15:50:50.299+05:30  INFO 10832 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-25T15:50:50.319+05:30  INFO 10832 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 10.003 seconds (process running for 10.758)
+2024-11-25T15:50:50.357+05:30  INFO 10832 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
+2024-11-25T15:50:50.358+05:30 ERROR 10832 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
+2024-11-25T15:50:50.358+05:30 DEBUG 10832 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
+2024-11-25T15:50:50.358+05:30  WARN 10832 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
+2024-11-25T15:51:08.894+05:30  INFO 10832 --- [springexample] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25T15:51:08.894+05:30  INFO 10832 --- [springexample] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-25T15:51:08.896+05:30  INFO 10832 --- [springexample] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-25T15:51:31.103+05:30  WARN 10832 --- [springexample] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'long'; For input string: "favicon.ico"]
+2024-11-25T15:51:33.512+05:30  WARN 10832 --- [springexample] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'long'; For input string: "favicon.ico"]
+2024-11-25T15:53:34.549+05:30  INFO 10832 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T15:53:34.560+05:30  INFO 10832 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-25T15:53:34.566+05:30  INFO 10832 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-25T15:54:54.634+05:30  INFO 11396 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 11396 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
+2024-11-25T15:54:54.637+05:30 DEBUG 11396 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25T15:54:54.638+05:30  INFO 11396 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-11-25T15:54:56.242+05:30  INFO 11396 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25T15:54:56.388+05:30  INFO 11396 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interface.
+2024-11-25T15:54:57.584+05:30  INFO 11396 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-25T15:54:57.617+05:30  INFO 11396 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-25T15:54:57.618+05:30  INFO 11396 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-25T15:54:57.748+05:30  INFO 11396 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-25T15:54:57.748+05:30  INFO 11396 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3005 ms
+2024-11-25T15:54:57.822+05:30  INFO 11396 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-25T15:54:58.198+05:30  INFO 11396 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-25T15:54:58.203+05:30  INFO 11396 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-25T15:54:58.234+05:30  INFO 11396 --- [springexample] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-25T15:54:58.528+05:30  INFO 11396 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25T15:54:58.638+05:30  INFO 11396 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-25T15:54:58.709+05:30  INFO 11396 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-25T15:54:59.337+05:30  INFO 11396 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25T15:55:00.941+05:30  INFO 11396 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25T15:55:01.009+05:30  INFO 11396 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T15:55:01.565+05:30  WARN 11396 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25T15:55:02.276+05:30  INFO 11396 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-25T15:55:02.292+05:30  INFO 11396 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 8.471 seconds (process running for 9.263)
+2024-11-25T15:55:02.297+05:30  INFO 11396 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
+2024-11-25T15:55:02.297+05:30 ERROR 11396 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
+2024-11-25T15:55:02.297+05:30 DEBUG 11396 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
+2024-11-25T15:55:02.297+05:30  WARN 11396 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
+2024-11-25T15:55:07.174+05:30  INFO 11396 --- [springexample] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25T15:55:07.176+05:30  INFO 11396 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-25T15:55:07.177+05:30  INFO 11396 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-25T15:55:18.052+05:30  WARN 11396 --- [springexample] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'long'; For input string: "favicon.ico"]
+2024-11-25T15:55:20.678+05:30  WARN 11396 --- [springexample] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'long'; For input string: "favicon.ico"]
+2024-11-25T15:56:39.256+05:30  INFO 11396 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T15:56:39.263+05:30  INFO 11396 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-25T15:56:39.265+05:30  INFO 11396 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-25T15:56:44.897+05:30  INFO 10392 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 10392 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
+2024-11-25T15:56:44.899+05:30 DEBUG 10392 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25T15:56:44.901+05:30  INFO 10392 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-11-25T15:56:46.333+05:30  INFO 10392 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25T15:56:46.448+05:30  INFO 10392 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 1 JPA repository interface.
+2024-11-25T15:56:47.496+05:30  INFO 10392 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-25T15:56:47.524+05:30  INFO 10392 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-25T15:56:47.524+05:30  INFO 10392 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-25T15:56:47.679+05:30  INFO 10392 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-25T15:56:47.681+05:30  INFO 10392 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2671 ms
+2024-11-25T15:56:47.765+05:30  INFO 10392 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-25T15:56:48.121+05:30  INFO 10392 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-25T15:56:48.129+05:30  INFO 10392 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-25T15:56:48.160+05:30  INFO 10392 --- [springexample] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-25T15:56:48.452+05:30  INFO 10392 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25T15:56:48.567+05:30  INFO 10392 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-25T15:56:48.641+05:30  INFO 10392 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-25T15:56:49.241+05:30  INFO 10392 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25T15:56:50.728+05:30  INFO 10392 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25T15:56:50.770+05:30  INFO 10392 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T15:56:51.302+05:30  WARN 10392 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25T15:56:51.987+05:30  INFO 10392 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-25T15:56:52.004+05:30  INFO 10392 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 7.898 seconds (process running for 8.604)
+2024-11-25T15:56:52.009+05:30  INFO 10392 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
+2024-11-25T15:56:52.009+05:30 ERROR 10392 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
+2024-11-25T15:56:52.009+05:30 DEBUG 10392 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
+2024-11-25T15:56:52.010+05:30  WARN 10392 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
+2024-11-25T15:56:55.932+05:30  INFO 10392 --- [springexample] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25T15:56:55.933+05:30  INFO 10392 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-25T15:56:55.935+05:30  INFO 10392 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-25T15:58:09.516+05:30  INFO 10392 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T15:58:09.523+05:30  INFO 10392 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-25T15:58:09.526+05:30  INFO 10392 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-25T15:58:14.833+05:30  INFO 20728 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 20728 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
+2024-11-25T15:58:14.836+05:30 DEBUG 20728 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25T15:58:14.838+05:30  INFO 20728 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-11-25T15:58:16.268+05:30  INFO 20728 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25T15:58:16.374+05:30  INFO 20728 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interface.
+2024-11-25T15:58:17.304+05:30  INFO 20728 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-25T15:58:17.329+05:30  INFO 20728 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-25T15:58:17.329+05:30  INFO 20728 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-25T15:58:17.420+05:30  INFO 20728 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-25T15:58:17.421+05:30  INFO 20728 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2476 ms
+2024-11-25T15:58:17.467+05:30  INFO 20728 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-25T15:58:17.814+05:30  INFO 20728 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-25T15:58:17.817+05:30  INFO 20728 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-25T15:58:17.848+05:30  INFO 20728 --- [springexample] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-25T15:58:18.120+05:30  INFO 20728 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25T15:58:18.213+05:30  INFO 20728 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-25T15:58:18.274+05:30  INFO 20728 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-25T15:58:18.869+05:30  INFO 20728 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25T15:58:19.973+05:30  INFO 20728 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25T15:58:20.012+05:30  INFO 20728 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T15:58:20.500+05:30  WARN 20728 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25T15:58:21.193+05:30  INFO 20728 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-25T15:58:21.207+05:30  INFO 20728 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 7.159 seconds (process running for 7.963)
+2024-11-25T15:58:21.211+05:30  INFO 20728 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
+2024-11-25T15:58:21.211+05:30 ERROR 20728 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
+2024-11-25T15:58:21.211+05:30 DEBUG 20728 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
+2024-11-25T15:58:21.211+05:30  WARN 20728 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
+2024-11-25T15:58:27.899+05:30  INFO 20728 --- [springexample] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25T15:58:27.900+05:30  INFO 20728 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-25T15:58:27.902+05:30  INFO 20728 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-25T15:58:43.432+05:30  WARN 20728 --- [springexample] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'long'; For input string: "favicon.ico"]
+2024-11-25T15:58:45.872+05:30  WARN 20728 --- [springexample] [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'long'; For input string: "favicon.ico"]
+2024-11-25T16:00:48.174+05:30  INFO 20728 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T16:00:48.178+05:30  INFO 20728 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-25T16:00:48.180+05:30  INFO 20728 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-25T16:01:33.603+05:30  INFO 22024 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 22024 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
+2024-11-25T16:01:33.610+05:30 DEBUG 22024 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25T16:01:33.610+05:30  INFO 22024 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-11-25T16:01:35.213+05:30  INFO 22024 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25T16:01:35.285+05:30  INFO 22024 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
+2024-11-25T16:01:36.077+05:30  INFO 22024 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-25T16:01:36.097+05:30  INFO 22024 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-25T16:01:36.098+05:30  INFO 22024 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-25T16:01:36.177+05:30  INFO 22024 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-25T16:01:36.178+05:30  INFO 22024 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2484 ms
+2024-11-25T16:01:36.232+05:30  INFO 22024 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-25T16:01:36.493+05:30  INFO 22024 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-25T16:01:36.496+05:30  INFO 22024 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-25T16:01:36.518+05:30  INFO 22024 --- [springexample] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-25T16:01:36.733+05:30  INFO 22024 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25T16:01:36.802+05:30  INFO 22024 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-25T16:01:36.846+05:30  INFO 22024 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-25T16:01:37.293+05:30  INFO 22024 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25T16:01:38.267+05:30  INFO 22024 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25T16:01:38.318+05:30  INFO 22024 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T16:01:38.707+05:30  WARN 22024 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25T16:01:39.207+05:30  INFO 22024 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-25T16:01:39.218+05:30  INFO 22024 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 6.203 seconds (process running for 6.817)
+2024-11-25T16:01:39.222+05:30  INFO 22024 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
+2024-11-25T16:01:39.223+05:30 ERROR 22024 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
+2024-11-25T16:01:39.223+05:30 DEBUG 22024 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
+2024-11-25T16:01:39.223+05:30  WARN 22024 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
+2024-11-25T16:01:42.188+05:30  INFO 22024 --- [springexample] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25T16:01:42.189+05:30  INFO 22024 --- [springexample] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-25T16:01:42.190+05:30  INFO 22024 --- [springexample] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-25T16:01:42.409+05:30  WARN 22024 --- [springexample] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.bridgelabz.springexample.dto.RequestDTO com.bridgelabz.springexample.controller.MyController.addEmployee(com.bridgelabz.springexample.dto.RequestDTO) with 2 errors: [Field error in object 'requestDTO' on field 'fName': rejected value [abc]; codes [Pattern.requestDTO.fName,Pattern.fName,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [requestDTO.fName,fName]; arguments []; default message [fName],[Ljakarta.validation.constraints.Pattern$Flag;@fd95272,^[A-Z][a-zA-Z]{2,}$]; default message [Pattern mismatch Min 3 characters eg= Sam]] [Field error in object 'requestDTO' on field 'age': rejected value [15]; codes [Min.requestDTO.age,Min.age,Min.int,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [requestDTO.age,age]; arguments []; default message [age],18]; default message [Age must be 18+]] ]
+2024-11-25T16:09:26.578+05:30  INFO 22024 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T16:09:26.586+05:30  INFO 22024 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-25T16:09:26.589+05:30  INFO 22024 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-25T16:09:30.804+05:30  INFO 9876 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 9876 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
+2024-11-25T16:09:30.804+05:30 DEBUG 9876 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25T16:09:30.804+05:30  INFO 9876 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-11-25T16:09:32.484+05:30  INFO 9876 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25T16:09:32.574+05:30  INFO 9876 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interface.
+2024-11-25T16:09:33.359+05:30  INFO 9876 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-25T16:09:33.381+05:30  INFO 9876 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-25T16:09:33.381+05:30  INFO 9876 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-25T16:09:33.457+05:30  INFO 9876 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-25T16:09:33.458+05:30  INFO 9876 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2562 ms
+2024-11-25T16:09:33.494+05:30  INFO 9876 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-25T16:09:33.742+05:30  INFO 9876 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-25T16:09:33.744+05:30  INFO 9876 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-25T16:09:33.764+05:30  INFO 9876 --- [springexample] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-25T16:09:33.962+05:30  INFO 9876 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25T16:09:34.046+05:30  INFO 9876 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-25T16:09:34.099+05:30  INFO 9876 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-25T16:09:34.552+05:30  INFO 9876 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25T16:09:35.447+05:30  INFO 9876 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25T16:09:35.480+05:30  INFO 9876 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T16:09:35.908+05:30  WARN 9876 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25T16:09:36.418+05:30  INFO 9876 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-25T16:09:36.431+05:30  INFO 9876 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 6.328 seconds (process running for 7.029)
+2024-11-25T16:09:36.434+05:30  INFO 9876 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
+2024-11-25T16:09:36.434+05:30 ERROR 9876 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
+2024-11-25T16:09:36.434+05:30 DEBUG 9876 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
+2024-11-25T16:09:36.434+05:30  WARN 9876 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
+2024-11-25T16:09:45.299+05:30  INFO 9876 --- [springexample] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25T16:09:45.299+05:30  INFO 9876 --- [springexample] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-25T16:09:45.304+05:30  INFO 9876 --- [springexample] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-11-25T16:12:22.567+05:30  INFO 9876 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T16:12:22.573+05:30  INFO 9876 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-25T16:12:22.576+05:30  INFO 9876 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-25T16:12:26.792+05:30  INFO 3208 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 3208 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
+2024-11-25T16:12:26.793+05:30 DEBUG 3208 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25T16:12:26.797+05:30  INFO 3208 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-11-25T16:12:27.921+05:30  INFO 3208 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25T16:12:27.996+05:30  INFO 3208 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interface.
+2024-11-25T16:12:29.290+05:30  INFO 3208 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-25T16:12:29.308+05:30  INFO 3208 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-25T16:12:29.309+05:30  INFO 3208 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-25T16:12:29.376+05:30  INFO 3208 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-25T16:12:29.377+05:30  INFO 3208 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2498 ms
+2024-11-25T16:12:29.414+05:30  INFO 3208 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-25T16:12:29.688+05:30  INFO 3208 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-25T16:12:29.691+05:30  INFO 3208 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-25T16:12:29.718+05:30  INFO 3208 --- [springexample] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-25T16:12:29.922+05:30  INFO 3208 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25T16:12:29.998+05:30  INFO 3208 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-25T16:12:30.042+05:30  INFO 3208 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-25T16:12:30.463+05:30  INFO 3208 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25T16:12:31.435+05:30  INFO 3208 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25T16:12:31.467+05:30  INFO 3208 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T16:12:31.879+05:30  WARN 3208 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25T16:12:32.401+05:30  INFO 3208 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-25T16:12:32.412+05:30  INFO 3208 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 6.306 seconds (process running for 6.828)
+2024-11-25T16:12:32.416+05:30  INFO 3208 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
+2024-11-25T16:12:32.416+05:30 ERROR 3208 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
+2024-11-25T16:12:32.416+05:30 DEBUG 3208 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
+2024-11-25T16:12:32.416+05:30  WARN 3208 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
+2024-11-25T16:12:43.094+05:30  INFO 3208 --- [springexample] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25T16:12:43.095+05:30  INFO 3208 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-25T16:12:43.096+05:30  INFO 3208 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-25T16:12:43.240+05:30 ERROR 3208 --- [springexample] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.bridgelabz.springexample.exception.CustomException: ID not found] with root cause
+
+com.bridgelabz.springexample.exception.CustomException: ID not found
+	at com.bridgelabz.springexample.service.EmployeeServiceImpl.lambda$getEmployeeById$0(EmployeeServiceImpl.java:34) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.bridgelabz.springexample.service.EmployeeServiceImpl.getEmployeeById(EmployeeServiceImpl.java:34) ~[classes/:na]
+	at com.bridgelabz.springexample.controller.MyController.getEmployeeById(MyController.java:52) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.31.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.31.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2024-11-25T16:15:24.457+05:30  INFO 3208 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T16:15:24.463+05:30  INFO 3208 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-25T16:15:24.466+05:30  INFO 3208 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-25T16:15:28.687+05:30  INFO 3984 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 3984 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
+2024-11-25T16:15:28.690+05:30 DEBUG 3984 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25T16:15:28.691+05:30  INFO 3984 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-11-25T16:15:30.049+05:30  INFO 3984 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25T16:15:30.136+05:30  INFO 3984 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 1 JPA repository interface.
+2024-11-25T16:15:31.052+05:30  INFO 3984 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-25T16:15:31.072+05:30  INFO 3984 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-25T16:15:31.073+05:30  INFO 3984 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-25T16:15:31.145+05:30  INFO 3984 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-25T16:15:31.146+05:30  INFO 3984 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2356 ms
+2024-11-25T16:15:31.188+05:30  INFO 3984 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-25T16:15:31.477+05:30  INFO 3984 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-25T16:15:31.480+05:30  INFO 3984 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-25T16:15:31.503+05:30  INFO 3984 --- [springexample] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-25T16:15:31.785+05:30  INFO 3984 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25T16:15:31.864+05:30  INFO 3984 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-25T16:15:31.919+05:30  INFO 3984 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-25T16:15:32.378+05:30  INFO 3984 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25T16:15:33.501+05:30  INFO 3984 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25T16:15:33.537+05:30  INFO 3984 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T16:15:33.995+05:30  WARN 3984 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25T16:15:34.674+05:30  INFO 3984 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-25T16:15:34.692+05:30  INFO 3984 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 6.776 seconds (process running for 7.394)
+2024-11-25T16:15:34.698+05:30  INFO 3984 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
+2024-11-25T16:15:34.698+05:30 ERROR 3984 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
+2024-11-25T16:15:34.698+05:30 DEBUG 3984 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
+2024-11-25T16:15:34.698+05:30  WARN 3984 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
+2024-11-25T16:15:39.965+05:30  INFO 3984 --- [springexample] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25T16:15:39.966+05:30  INFO 3984 --- [springexample] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-25T16:15:39.967+05:30  INFO 3984 --- [springexample] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-25T16:20:48.637+05:30  INFO 3984 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T16:20:48.641+05:30  INFO 3984 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-25T16:20:48.645+05:30  INFO 3984 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-25T16:20:53.696+05:30  INFO 22336 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 22336 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
+2024-11-25T16:20:53.699+05:30 DEBUG 22336 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25T16:20:53.701+05:30  INFO 22336 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-11-25T16:20:54.778+05:30  INFO 22336 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25T16:20:54.860+05:30  INFO 22336 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interface.
+2024-11-25T16:20:55.530+05:30  INFO 22336 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-25T16:20:55.546+05:30  INFO 22336 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-25T16:20:55.546+05:30  INFO 22336 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-25T16:20:55.614+05:30  INFO 22336 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-25T16:20:55.615+05:30  INFO 22336 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1831 ms
+2024-11-25T16:20:55.646+05:30  INFO 22336 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-25T16:20:55.897+05:30  INFO 22336 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-25T16:20:55.900+05:30  INFO 22336 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-25T16:20:55.920+05:30  INFO 22336 --- [springexample] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-25T16:20:56.112+05:30  INFO 22336 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25T16:20:56.201+05:30  INFO 22336 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-25T16:20:56.252+05:30  INFO 22336 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-25T16:20:56.664+05:30  INFO 22336 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25T16:20:57.569+05:30  INFO 22336 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25T16:20:57.603+05:30  INFO 22336 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T16:20:57.990+05:30  WARN 22336 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25T16:20:58.475+05:30  INFO 22336 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-25T16:20:58.486+05:30  INFO 22336 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 5.388 seconds (process running for 5.933)
+2024-11-25T16:20:58.491+05:30  INFO 22336 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
+2024-11-25T16:20:58.492+05:30 ERROR 22336 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
+2024-11-25T16:20:58.492+05:30 DEBUG 22336 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
+2024-11-25T16:20:58.492+05:30  WARN 22336 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
+2024-11-25T16:21:31.004+05:30  INFO 22336 --- [springexample] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25T16:21:31.005+05:30  INFO 22336 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-25T16:21:31.007+05:30  INFO 22336 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-25T16:21:49.940+05:30  WARN 22336 --- [springexample] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'long'; For input string: "favicon.ico"]
+2024-11-25T16:21:52.363+05:30  WARN 22336 --- [springexample] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'long'; For input string: "favicon.ico"]
+2024-11-25T16:21:53.508+05:30  WARN 22336 --- [springexample] [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'long'; For input string: "favicon.ico"]
+2024-11-25T16:27:00.769+05:30  INFO 22336 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T16:27:00.777+05:30  INFO 22336 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-25T16:27:00.779+05:30  INFO 22336 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-25T16:27:05.372+05:30  INFO 12524 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 12524 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
+2024-11-25T16:27:05.375+05:30 DEBUG 12524 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25T16:27:05.376+05:30  INFO 12524 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-11-25T16:27:06.419+05:30  INFO 12524 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25T16:27:06.494+05:30  INFO 12524 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
+2024-11-25T16:27:07.162+05:30  INFO 12524 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-25T16:27:07.179+05:30  INFO 12524 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-25T16:27:07.179+05:30  INFO 12524 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-25T16:27:07.249+05:30  INFO 12524 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-25T16:27:07.249+05:30  INFO 12524 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1785 ms
+2024-11-25T16:27:07.329+05:30 ERROR 12524 --- [springexample] [main] com.zaxxer.hikari.HikariConfig           : Failed to load driver class com.mysql.cj.jdbc.Driver from HikariConfig class classloader jdk.internal.loader.ClassLoaders$AppClassLoader@5a07e868
+2024-11-25T16:27:07.331+05:30  WARN 12524 --- [springexample] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+2024-11-25T16:27:07.331+05:30  INFO 12524 --- [springexample] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-25T16:27:07.349+05:30  INFO 12524 --- [springexample] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-25T16:27:07.379+05:30 ERROR 12524 --- [springexample] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.5.jar:3.3.5]
+	at com.bridgelabz.springexample.SpringexampleApplication.main(SpringexampleApplication.java:15) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.1.14.jar:6.1.14]
+	... 10 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.14.jar:6.1.14]
+	... 20 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:178) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.14.jar:6.1.14]
+	... 34 common frames omitted
+Caused by: java.lang.RuntimeException: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+	at com.zaxxer.hikari.HikariConfig.setDriverClassName(HikariConfig.java:494) ~[HikariCP-5.1.0.jar:na]
+	at org.springframework.boot.jdbc.DataSourceBuilder$MappedDataSourceProperty.set(DataSourceBuilder.java:479) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.jdbc.DataSourceBuilder$MappedDataSourceProperties.set(DataSourceBuilder.java:373) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.jdbc.DataSourceBuilder.build(DataSourceBuilder.java:183) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:59) ~[spring-boot-autoconfigure-3.3.5.jar:3.3.5]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:117) ~[spring-boot-autoconfigure-3.3.5.jar:3.3.5]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146) ~[spring-beans-6.1.14.jar:6.1.14]
+	... 35 common frames omitted
+
+2024-11-25T16:28:20.950+05:30  INFO 6616 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 6616 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
+2024-11-25T16:28:20.953+05:30 DEBUG 6616 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25T16:28:20.954+05:30  INFO 6616 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-11-25T16:28:21.972+05:30  INFO 6616 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25T16:28:22.059+05:30  INFO 6616 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interface.
+2024-11-25T16:28:22.796+05:30  INFO 6616 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-25T16:28:22.817+05:30  INFO 6616 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-25T16:28:22.818+05:30  INFO 6616 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-25T16:28:22.894+05:30  INFO 6616 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-25T16:28:22.895+05:30  INFO 6616 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1858 ms
+2024-11-25T16:28:23.134+05:30  INFO 6616 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25T16:28:23.201+05:30  INFO 6616 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-25T16:28:23.237+05:30  INFO 6616 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-25T16:28:23.663+05:30  INFO 6616 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25T16:28:23.702+05:30  INFO 6616 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-25T16:28:24.229+05:30  INFO 6616 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79d4ff58
+2024-11-25T16:28:24.232+05:30  INFO 6616 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-25T16:28:25.343+05:30  INFO 6616 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25T16:28:25.511+05:30  INFO 6616 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T16:28:26.007+05:30  WARN 6616 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25T16:28:26.604+05:30  INFO 6616 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-25T16:28:26.619+05:30  INFO 6616 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 6.307 seconds (process running for 6.852)
+2024-11-25T16:28:26.623+05:30  INFO 6616 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
+2024-11-25T16:28:26.623+05:30 ERROR 6616 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
+2024-11-25T16:28:26.623+05:30 DEBUG 6616 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
+2024-11-25T16:28:26.623+05:30  WARN 6616 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
+2024-11-25T16:29:45.512+05:30  INFO 6616 --- [springexample] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25T16:29:45.513+05:30  INFO 6616 --- [springexample] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-25T16:29:45.515+05:30  INFO 6616 --- [springexample] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-25T16:36:11.680+05:30  INFO 6616 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T16:36:11.683+05:30  INFO 6616 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-25T16:36:11.699+05:30  INFO 6616 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-25T16:36:57.542+05:30  INFO 17396 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 17396 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
+2024-11-25T16:36:57.544+05:30 DEBUG 17396 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25T16:36:57.546+05:30  INFO 17396 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-11-25T16:36:58.610+05:30  INFO 17396 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25T16:36:58.690+05:30  INFO 17396 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2024-11-25T16:36:59.418+05:30  INFO 17396 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-25T16:36:59.436+05:30  INFO 17396 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-25T16:36:59.436+05:30  INFO 17396 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-25T16:36:59.507+05:30  INFO 17396 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-25T16:36:59.507+05:30  INFO 17396 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1879 ms
+2024-11-25T16:36:59.725+05:30  INFO 17396 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25T16:36:59.818+05:30  INFO 17396 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-25T16:36:59.861+05:30  INFO 17396 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-25T16:37:00.291+05:30  INFO 17396 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25T16:37:00.333+05:30  INFO 17396 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-25T16:37:00.718+05:30  INFO 17396 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44eb2452
+2024-11-25T16:37:00.722+05:30  INFO 17396 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-25T16:37:01.860+05:30  INFO 17396 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25T16:37:02.172+05:30  INFO 17396 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T16:37:02.618+05:30  WARN 17396 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25T16:37:03.198+05:30  INFO 17396 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-25T16:37:03.213+05:30  INFO 17396 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 6.279 seconds (process running for 6.82)
+2024-11-25T16:37:03.217+05:30  INFO 17396 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
+2024-11-25T16:37:03.218+05:30 ERROR 17396 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
+2024-11-25T16:37:03.218+05:30 DEBUG 17396 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
+2024-11-25T16:37:03.218+05:30  WARN 17396 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
+2024-11-25T16:38:26.122+05:30  INFO 17396 --- [springexample] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25T16:38:26.122+05:30  INFO 17396 --- [springexample] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-25T16:38:26.124+05:30  INFO 17396 --- [springexample] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-25T16:45:32.067+05:30  INFO 17396 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T16:45:32.071+05:30  INFO 17396 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-25T16:45:32.086+05:30  INFO 17396 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-25T16:45:36.664+05:30  INFO 8012 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 8012 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
+2024-11-25T16:45:36.666+05:30 DEBUG 8012 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25T16:45:36.667+05:30  INFO 8012 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-11-25T16:45:37.678+05:30  INFO 8012 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25T16:45:37.738+05:30  INFO 8012 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2024-11-25T16:45:38.534+05:30  INFO 8012 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-25T16:45:38.555+05:30  INFO 8012 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-25T16:45:38.556+05:30  INFO 8012 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-25T16:45:38.634+05:30  INFO 8012 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-25T16:45:38.634+05:30  INFO 8012 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1889 ms
+2024-11-25T16:45:38.887+05:30  INFO 8012 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25T16:45:38.967+05:30  INFO 8012 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-25T16:45:39.024+05:30  INFO 8012 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-25T16:45:39.462+05:30  INFO 8012 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25T16:45:39.512+05:30  INFO 8012 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-25T16:45:39.901+05:30  INFO 8012 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@395281c2
+2024-11-25T16:45:39.903+05:30  INFO 8012 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-25T16:45:41.068+05:30  INFO 8012 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25T16:45:41.168+05:30  INFO 8012 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T16:45:41.575+05:30  WARN 8012 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25T16:45:42.086+05:30  INFO 8012 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-25T16:45:42.097+05:30  INFO 8012 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 6.063 seconds (process running for 6.616)
+2024-11-25T16:45:42.102+05:30  INFO 8012 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
+2024-11-25T16:45:42.102+05:30 ERROR 8012 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
+2024-11-25T16:45:42.102+05:30 DEBUG 8012 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
+2024-11-25T16:45:42.102+05:30  WARN 8012 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
+2024-11-25T16:45:58.130+05:30  INFO 8012 --- [springexample] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25T16:45:58.131+05:30  INFO 8012 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-25T16:45:58.132+05:30  INFO 8012 --- [springexample] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-25T16:45:58.539+05:30  WARN 8012 --- [springexample] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-11-25T16:45:58.540+05:30  WARN 8012 --- [springexample] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-11-25T16:46:50.121+05:30  WARN 8012 --- [springexample] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-11-25T16:46:50.121+05:30  WARN 8012 --- [springexample] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-11-25T16:47:54.496+05:30  INFO 8012 --- [springexample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T16:47:54.498+05:30  INFO 8012 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-25T16:47:54.507+05:30  INFO 8012 --- [springexample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-25T16:47:59.150+05:30  INFO 23556 --- [springexample] [main] c.b.s.SpringexampleApplication           : Starting SpringexampleApplication using Java 23.0.1 with PID 23556 (C:\Users\moham\OneDrive\Desktop\JavaContent\springexample\target\classes started by moham in C:\Users\moham\OneDrive\Desktop\JavaContent\springexample)
+2024-11-25T16:47:59.152+05:30 DEBUG 23556 --- [springexample] [main] c.b.s.SpringexampleApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-25T16:47:59.153+05:30  INFO 23556 --- [springexample] [main] c.b.s.SpringexampleApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-11-25T16:48:00.190+05:30  INFO 23556 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25T16:48:00.264+05:30  INFO 23556 --- [springexample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interface.
+2024-11-25T16:48:00.969+05:30  INFO 23556 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-25T16:48:00.988+05:30  INFO 23556 --- [springexample] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-25T16:48:00.989+05:30  INFO 23556 --- [springexample] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-25T16:48:01.051+05:30  INFO 23556 --- [springexample] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-25T16:48:01.052+05:30  INFO 23556 --- [springexample] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1813 ms
+2024-11-25T16:48:01.277+05:30  INFO 23556 --- [springexample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25T16:48:01.353+05:30  INFO 23556 --- [springexample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-25T16:48:01.406+05:30  INFO 23556 --- [springexample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-25T16:48:01.855+05:30  INFO 23556 --- [springexample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25T16:48:01.898+05:30  INFO 23556 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-25T16:48:02.278+05:30  INFO 23556 --- [springexample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79d4ff58
+2024-11-25T16:48:02.283+05:30  INFO 23556 --- [springexample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-25T16:48:03.429+05:30  INFO 23556 --- [springexample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25T16:48:03.523+05:30  INFO 23556 --- [springexample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25T16:48:03.937+05:30  WARN 23556 --- [springexample] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25T16:48:04.527+05:30  INFO 23556 --- [springexample] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-25T16:48:04.537+05:30  INFO 23556 --- [springexample] [main] c.b.s.SpringexampleApplication           : Started SpringexampleApplication in 5.987 seconds (process running for 6.524)
+2024-11-25T16:48:04.542+05:30  INFO 23556 --- [springexample] [main] c.b.s.SpringexampleApplication           : Info Level
+2024-11-25T16:48:04.543+05:30 ERROR 23556 --- [springexample] [main] c.b.s.SpringexampleApplication           : Error level
+2024-11-25T16:48:04.543+05:30 DEBUG 23556 --- [springexample] [main] c.b.s.SpringexampleApplication           : Debuf level
+2024-11-25T16:48:04.543+05:30  WARN 23556 --- [springexample] [main] c.b.s.SpringexampleApplication           : Warn level
+2024-11-25T16:48:08.616+05:30  INFO 23556 --- [springexample] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25T16:48:08.617+05:30  INFO 23556 --- [springexample] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-25T16:48:08.618+05:30  INFO 23556 --- [springexample] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

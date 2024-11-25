@@ -1,11 +1,13 @@
 package com.bridgelabz.springexample.dto;
 
+import com.bridgelabz.springexample.entity.Address;
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -15,7 +17,7 @@ public class RequestDTO {
     //["a","b","c"] -> valid
 
     // null , [] , {} invalid
-    @NotEmpty(message = "Name should not be empty")
+//    @NotEmpty(message = "Name should not be empty")
     @Pattern(regexp = "^[A-Z][a-zA-Z]{2,}$", message = "Pattern mismatch Min 3 characters eg= Sam")
     private String fName;
 
@@ -29,8 +31,11 @@ public class RequestDTO {
 
     // name = "ABC", "123"
     // name=""
-    @NotBlank
-    private String address;
+//    @NotBlank
+    private List<Address> address;
+
+    private List<String> departments;
+
 
     @Min(value = 18,message = "Age must be 18+")
     @Max(value = 50, message = "Age limit less then 50")

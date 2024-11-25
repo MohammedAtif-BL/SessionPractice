@@ -1,7 +1,9 @@
 package com.bridgelabz.springexample.service;
 
 import com.bridgelabz.springexample.dto.RequestDTO;
+import com.bridgelabz.springexample.entity.Address;
 import com.bridgelabz.springexample.entity.Employee;
+import com.bridgelabz.springexample.exception.CustomException;
 import com.bridgelabz.springexample.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,6 +22,10 @@ public class EmployeeServiceImpl implements EmployeeService{
     @Override
     public RequestDTO addEmployee(RequestDTO requestDTO) {
         Employee employee = new Employee(requestDTO);
+        List<Address> addresses = requestDTO.getAddress();
+        addresses.forEach(address -> address.setEmployee(employee));
+
+        employee.setAddress(addresses);
         return mapToDTO(employeeRepository.save(employee));
     }
 
@@ -30,7 +36,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 
     @Override
     public Employee getEmployeeById(long id) {
-        return employeeRepository.findById(id).orElseThrow(()->new RuntimeException("ID not found"));
+        return employeeRepository.findById(id).orElseThrow(()->new CustomException("ID not found"));
     }
 
     public RequestDTO mapToDTO(Employee employee){
@@ -38,6 +44,7 @@ public class EmployeeServiceImpl implements EmployeeService{
         requestDTO.setLName(employee.getFName());
         requestDTO.setLName(employee.getLName());
         requestDTO.setAge(employee.getAge());
+        requestDTO.setDepartments(employee.getDepartments());
         requestDTO.setAddress(employee.getAddress());
         return requestDTO;
     }
