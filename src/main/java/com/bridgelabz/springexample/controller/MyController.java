@@ -14,15 +14,15 @@ import java.util.List;
 //@Controller
 //ResponseBody
 @Slf4j
+@RequestMapping("/mycontroller")
 public class MyController {
 
     @Autowired
     private EmployeeServiceImpl employeeService;
 
     @RequestMapping(value = "/home",method = RequestMethod.GET)
-//    @GetMapping
     public String message(){
-        return "Spring Example";
+        return "My Controller";
     }
 
 //    @PathVariable
