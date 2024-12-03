@@ -8,15 +8,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //@Configuration
 //@ComponentScan
 //@EnableAutoConfiguration
-@Slf4j
+//@Slf4j
 public class SpringexampleApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringexampleApplication.class, args);
-		log.info("Info Level");
-		log.error("Error level");
-		log.debug("Debuf level");
-		log.warn("Warn level");
+//		log.info("Info Level");
+//		log.error("Error level");
+//		log.debug("Debuf level");
+//		log.warn("Warn level");
 	}
 
 }

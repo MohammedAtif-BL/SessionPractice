@@ -13,20 +13,27 @@ import java.util.List;
 @Service
 public class EmployeeServiceImpl implements EmployeeService{
 
+    @Autowired
     private EmployeeRepository employeeRepository;
+
+    @Autowired
+    private EmailService emailService;
 
     public EmployeeServiceImpl(EmployeeRepository employeeRepository) {
         this.employeeRepository = employeeRepository;
     }
 
     @Override
-    public RequestDTO addEmployee(RequestDTO requestDTO) {
-        Employee employee = new Employee(requestDTO);
-        List<Address> addresses = requestDTO.getAddress();
-        addresses.forEach(address -> address.setEmployee(employee));
+    public String addEmployee(RequestDTO requestDTO) {
 
-        employee.setAddress(addresses);
-        return mapToDTO(employeeRepository.save(employee));
+        emailService.sendEmail(requestDTO.getEmailId(), "Data","Email Body");
+//        Employee employee = new Employee(requestDTO);
+//        List<Address> addresses = requestDTO.getAddress();
+//        addresses.forEach(address -> address.(employee));
+//
+//        employee.setAddress(addresses);
+//        return mapToDTO(employeeRepository.save(employee));
+        return "Success";
     }
 
     @Override
@@ -40,12 +47,13 @@ public class EmployeeServiceImpl implements EmployeeService{
     }
 
     public RequestDTO mapToDTO(Employee employee){
-        RequestDTO requestDTO = new RequestDTO();
-        requestDTO.setLName(employee.getFName());
-        requestDTO.setLName(employee.getLName());
-        requestDTO.setAge(employee.getAge());
-        requestDTO.setDepartments(employee.getDepartments());
-        requestDTO.setAddress(employee.getAddress());
-        return requestDTO;
+//        RequestDTO requestDTO = new RequestDTO();
+//        requestDTO.setLName(employee.getFName());
+//        requestDTO.setLName(employee.getLName());
+//        requestDTO.setAge(employee.getAge());
+//        requestDTO.setDepartments(employee.getDepartments());
+//        requestDTO.setAddress(employee.getAddress());
+//        return requestDTO;
+        return null;
     }
 }

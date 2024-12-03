@@ -38,7 +38,7 @@ public class MyController {
 
 //    @RequestBody
     @RequestMapping(value = "/add", method = RequestMethod.POST)
-    public RequestDTO addEmployee(@Valid @RequestBody RequestDTO requestDTO){
+    public String addEmployee(@Valid @RequestBody RequestDTO requestDTO){
         return employeeService.addEmployee(requestDTO);
     }
 

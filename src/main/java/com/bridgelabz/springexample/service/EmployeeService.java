@@ -6,7 +6,7 @@ import com.bridgelabz.springexample.entity.Employee;
 import java.util.List;
 
 public interface EmployeeService {
-    RequestDTO addEmployee(RequestDTO requestDTO);
+    String addEmployee(RequestDTO requestDTO);
 
     List<Employee> getAllEmployee();
 

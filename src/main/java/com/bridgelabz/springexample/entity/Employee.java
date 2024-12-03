@@ -32,11 +32,11 @@ public class Employee {
     @OneToMany(mappedBy = "employee",cascade = CascadeType.ALL)
     private List<Address> address;
 
-    public Employee(RequestDTO requestDTO) {
-        this.fName = requestDTO.getFName();
-        this.lName = requestDTO.getLName();
-        this.age = requestDTO.getAge();
-        this.doj = LocalDate.now();
-        this.departments = requestDTO.getDepartments();
-    }
+//    public Employee(RequestDTO requestDTO) {
+//        this.fName = requestDTO.getFName();
+//        this.lName = requestDTO.getLName();
+//        this.age = requestDTO.getAge();
+//        this.doj = LocalDate.now();
+//        this.departments = requestDTO.getDepartments();
+//    }
 }
