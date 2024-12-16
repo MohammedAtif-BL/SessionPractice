@@ -69,7 +69,6 @@ public class BatchConfig {
         return new JobBuilder("importStudents", jobRepository)
                 .start(step1())
                 .build();
-
     }
 
     @Bean

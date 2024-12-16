@@ -1,22 +1,18 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/file-upload
-    username: username
-    password: password
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:mysql://localhost:3306/springbatch?createDatabaseIfNotExist=true
+    username: root
+    password: root
   jpa:
     hibernate:
-      ddl-auto: create-drop
-    show-sql: false
-    properties:
-      hibernate:
-        format_sql: true
-    database: postgresql
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
+      ddl-auto: update
+    show-sql: true
   batch:
     jdbc:
       initialize-schema: ALWAYS
     job:
       enabled: false
+
+#spring.batch.jdbc.initialize-schema = always
 server:
-  port: 9090
+  port: 9091
